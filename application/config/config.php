@@ -25,8 +25,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-date_default_timezone_set('Asia/Jakarta');
+//Mengaktifkan penyimpanan output pada browser agar output php yang dihasilkan pada halaman yang sudah diload secara penuh dapat disimpan, sehingga ketika user melakukan reload halaman website browser tidak perlu lagi menarik ulang data/load yang sudah tersimpan
+ob_start();
 
+date_default_timezone_set('Asia/Jakarta');
 $config['base_url'] = 'http://'.$_SERVER["SERVER_NAME"].'/github/firsttest/';
 
 /*
